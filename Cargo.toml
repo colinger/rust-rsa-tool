@@ -1,0 +1,19 @@
+[package]
+name = "rsa_utils"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.90.0"
+
+[dependencies]
+rsa = "0.9.6"
+rand = "0.8.5"
+base64 = "0.22.1"
+aes = "0.8.4"
+cbc = "0.1.2"
+cipher = { version = "0.4.4", features = ["std"] }
+pkcs8 = { version = "0.10.2", features = ["pem", "std"] }
+pkcs1 = { version = "0.7.5", features = ["pem", "std"] }
+thiserror = "1.0.63"
+
+[dev-dependencies]
+tempfile = "3.12.0"
