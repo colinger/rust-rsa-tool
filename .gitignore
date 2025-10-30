@@ -20,3 +20,4 @@ test_*.txt
 test_*.bin
 *.encrypted
 *.decrypted
+.cargo
