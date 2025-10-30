@@ -5,7 +5,7 @@
 /// 3. 验证内容一致性
 /// 4. 生成的文件可以被 Java 解密
 
-use rsa_utils::{encrypt_file_java_ecb, decrypt_file_java_ecb, init_key, encode_public_key, encode_private_key};
+use rust_rsa_tool::{encrypt_file_java_ecb, decrypt_file_java_ecb, init_key, encode_public_key, encode_private_key};
 use std::fs;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {

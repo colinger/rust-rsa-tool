@@ -1,4 +1,4 @@
-use rsa_utils::{
+use rust_rsa_tool::{
     decrypt_file, encode_private_key, encode_public_key, encrypt, encrypt_file, init_key,
 };
 use std::fs;
