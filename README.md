@@ -19,7 +19,7 @@ A Rust implementation of RSA file encryption utilities, converted from Java. Thi
 ### Generate RSA Key Pair
 
 ```rust
-use rsa_utils::{init_key, encode_public_key, encode_private_key};
+use rust_rsa_tool::{init_key, encode_public_key, encode_private_key};
 
 let key_pair = init_key()?;
 let public_key_str = encode_public_key(&key_pair.public_key)?;
@@ -32,7 +32,7 @@ println!("Private Key: {}", private_key_str);
 ### Encrypt Small Data
 
 ```rust
-use rsa_utils::encrypt;
+use rust_rsa_tool::encrypt;
 
 let plain_text = b"Hello, World!";
 let encrypted = encrypt(plain_text, &public_key_str)?;
@@ -41,7 +41,7 @@ let encrypted = encrypt(plain_text, &public_key_str)?;
 ### Encrypt/Decrypt Files
 
 ```rust
-use rsa_utils::{encrypt_file, decrypt_file};
+use rust_rsa_tool::{encrypt_file, decrypt_file};
 
 // Encrypt a file
 encrypt_file("input.txt", "encrypted.bin", &public_key_str)?;
